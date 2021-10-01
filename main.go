@@ -2,12 +2,19 @@ package main
 
 import (
 	"fmt"
+	"strings"
 )
 
-const boolean bool = false
+func multiply(a, b int) int {
+	return a * b
+}
+
+func lenAndUpper(name string) (int, string) {
+	return len(name), strings.ToUpper(name)
+}
 
 func main() {
-	name := "jaehong"
-	name = "min"
-	fmt.Println(name, boolean)
+	fmt.Println(multiply(2, 3))
+	totalLength, upperName := lenAndUpper("jaehong")
+	fmt.Println(totalLength, upperName)
 }
