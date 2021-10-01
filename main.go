@@ -2,11 +2,12 @@ package main
 
 import (
 	"fmt"
-
-	"github.com/JaeHong94/learngo/sometings"
 )
 
+const boolean bool = false
+
 func main() {
-	sometings.SayHello()
-	fmt.Println("Hello world!")
+	name := "jaehong"
+	name = "min"
+	fmt.Println(name, boolean)
 }
